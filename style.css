@@ -5,27 +5,27 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.banner {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.banner img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.banner .banner__info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .aaa { text-align: center;
+  .banner { text-align: center;
   }
 }
 
-.centered-main-page-element {
+.tasks {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -37,7 +37,7 @@ body {
   flex-grow: 1
 }
 
-.task-row-wrapper {
+.task__add-wrapper {
   display: flex;
 }
 
@@ -117,6 +117,7 @@ li {
   justify-content: space-between;
   align-items: center;
 }
+
 li > * {
   vertical-align: middle;
 }
@@ -157,11 +158,11 @@ ul li input[type=text] {
   display:none
 }
 
-ul li.editMode input[type=text] {
+ul li.task__edit input[type=text] {
   display:inline-block;
   width:224px
 }
 
-ul li.editMode label {
+ul li.task__edit label {
   display:none;
 }
