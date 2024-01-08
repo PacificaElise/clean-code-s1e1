@@ -42,7 +42,7 @@ body {
 }
 
 .list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
@@ -151,14 +151,14 @@ input#new-task {
 
 /* Edit Task */
 .list__item input[type=text] {
-  display:none
+  display: none
 }
 
 .task__edit input[type=text] {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .task__edit label {
-  display:none;
+  display: none;
 }
