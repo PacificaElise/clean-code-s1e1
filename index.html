@@ -35,12 +35,15 @@
           class="task__add task"
           id="new-task"
         />
-        <button>Add</button>
+        <button class="task__add add">Add</button>
       </p>
-      <h3>Todo</h3>
-      <ul class="tasks__incomplete">
-        <li>
-          <input type="checkbox" />
+      <h3 class="task__add title">Todo</h3>
+      <ul class="tasks__incomplete list">
+        <li class="list__item">
+          <input
+            type="checkbox"
+            class="tasks__incomplete check"
+          />
           <label class="tasks__incomplete task">Pay Bills</label>
           <input
             type="text"
@@ -51,8 +54,11 @@
             <img src="./remove.svg" />
           </button>
         </li>
-        <li class="task__edit">
-          <input type="checkbox" />
+        <li class="list__item task__edit">
+          <input
+            type="checkbox"
+            class="tasks__incomplete check"
+          />
           <label class="task__edit task">Go Shopping</label>
           <input
             type="text"
@@ -65,11 +71,12 @@
           </button>
         </li>
       </ul>
-      <h3>Completed</h3>
-      <ul class="tasks__completed">
-        <li>
+      <h3 class="tasks__completed title">Completed</h3>
+      <ul class="tasks__completed list">
+        <li class="list__item">
           <input
             type="checkbox"
+            class="tasks__completed check"
             checked
           />
           <label class="tasks__completed task">See the Doctor</label>
