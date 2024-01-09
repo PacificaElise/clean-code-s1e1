@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-.banner .banner__info {
+.banner__info {
   font-family: fantasy, cursive;
 }
 
@@ -36,10 +36,6 @@ body {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
-}
-
-.task__add-wrapper {
-  display: flex;
 }
 
 .list {
@@ -74,14 +70,13 @@ body {
 }
 
 /* Heading */
-.title,
-label[for='new-task'] {
+.title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
   border-bottom: 2px solid #333;
   padding: 30px 0 10px;
-  margin: 0;
+  margin: 0 0 20px;
   text-transform: uppercase;
 }
 
@@ -103,12 +98,7 @@ input[type='text']:focus {
 }
 
 /* New Task */
-label[for='new-task'] {
-  display: block;
-  margin: 0 0 20px;
-}
-
-input#new-task {
+#new-task {
   width: 318px;
 }
 
@@ -153,7 +143,7 @@ input#new-task {
 }
 
 /* Completed */
-.list#completed-tasks label {
+#completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }

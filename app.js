@@ -9,8 +9,8 @@
 
 var taskInput = document.getElementById('new-task'); //Add a new task.
 var addButton = document.getElementsByTagName('button')[0]; //first button
-var incompleteTaskHolder = document.querySelector('.tasks__incomplete'); //ul of #incompleteTasks
-var completedTasksHolder = document.querySelector('.tasks__completed'); //completed-tasks
+var incompleteTaskHolder = document.querySelector('.tasks__incomplete.list'); //ul of #incompleteTasks
+var completedTasksHolder = document.querySelector('.tasks__completed.list'); //completed-tasks
 
 //New task list item
 var createNewTaskElement = function (taskString) {
@@ -19,7 +19,6 @@ var createNewTaskElement = function (taskString) {
 
   //input (checkbox)
   var checkBox = document.createElement('input'); //checkbx
-  checkBox.className = 'check';
   //label
   var label = document.createElement('label'); //label
   //input (text)
@@ -36,6 +35,8 @@ var createNewTaskElement = function (taskString) {
 
   //Each elements, needs appending
   checkBox.type = 'checkbox';
+  checkBox.className = 'check';
+
   editInput.type = 'text';
   editInput.className = 'task';
 
